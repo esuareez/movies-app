@@ -3,13 +3,11 @@ import mongoose from "mongoose";
 const MovieSchema = new mongoose.Schema({
     title:{
         type: String,
-        require: [true, "El título es obligatorio"],
-        trim: true
+        required: [true, "El título es obligatorio"],
     },
     plot: {
         type: String,
-        require: [true, "El plot es obligatorio"],
-        trim: true
+        required: [true, "El plot es obligatorio"],
     }
 })
 
